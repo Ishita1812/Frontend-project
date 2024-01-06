@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="hero-section">
+        <img src="assets/images/blog.jpeg" width="540">
+    </div>
+    <div>
+        <h2>Popular Blogs of The Day</h2>
+        <hr style="border: rgb(15, 13, 13) 2px solid; margin: 5px 0px">
+    
+        <ng-container *ngFor="let course of courses">
+            <div class="course-container" *ngIf="course.ratings >= 4.6">
+                <div class="course-card">
+                    <div>
+                        <img [src]="course.image" style="width:220px; height:140px;">
+                    </div>
+                    <div class="course-name"><h4>{{ course.name}}</h4></div>
+                    <div class="course-description"><p>{{course.description.slice(0, 80)}}...</p></div>
+                    <div class="details">
+                        <div class="course-type" [ngStyle]="{color: course.type === 'Free' ? 'Green' : 'Red'}">{{course.type}}</div>
+                        
+                    </div>
+                    <div class="course-buttons">
+                        
+                        
+                    </div>
+                </div>
+            </div>  
+        </ng-container>
+    </div>
+</div>
+

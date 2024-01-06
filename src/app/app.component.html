@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="main-container">
+  <div class="nav-container">
+    <ul>
+      <li>
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink=""
+          >Home</a
+        >
+      </li>
+      <li><a routerLinkActive="active" routerLink="about">About Us</a></li>
+      <li><a routerLinkActive="active" routerLink="courses">Blog List</a></li>
+      <li><a routerLinkActive="active" routerLink="addblog">Add Blog</a></li>
+      <span style="float: right">
+        <li><a (click)="loginFn()">Login</a></li>
+        <li><a (click)="logoutFn()">Logout</a></li>
+      </span>
+    </ul>
+  </div>
+  
+  <!-- <app-home></app-home>
+  <app-about></app-about>
+  <app-contact></app-contact>
+  <app-courses></app-courses> -->
+  <router-outlet></router-outlet>
+</div>
