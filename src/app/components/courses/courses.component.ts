@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CoursesService } from '../../services/courses.service';
 import { RouterModule } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.css',
 })
-export class CoursesComponent {
+export class CoursesComponent implements OnInit{
   constructor(private coursesService: CoursesService) {}
 
   courses: any[] = [];

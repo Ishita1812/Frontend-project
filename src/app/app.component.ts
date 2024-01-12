@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-// import { ContactComponent } from './components/contact/contact.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { AboutComponent } from './components/about/about.component';
 import { AuthServService } from './services/auth-serv.service';
 import { AddblogComponent } from './components/addblog/addblog.component';
-import { FormGroup, FormGroupDirective, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 

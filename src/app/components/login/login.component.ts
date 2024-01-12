@@ -4,7 +4,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthServService } from '../../services/auth-serv.service';
 import { LoginService } from '../../services/login.service';
-import { User } from './model/User';
+import { User } from '../model/User';
 
 @Component({
   selector: 'app-login',

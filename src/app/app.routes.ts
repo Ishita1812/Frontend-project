@@ -24,6 +24,7 @@ export const routes: Routes = [
   { path: 'courses', component: CoursesComponent, canActivate: [authenticationGuard]},
   { path: 'addblog', component: AddblogComponent, canActivate: [authenticationGuard]},
   {path:'header', component: HeaderComponent},
+  {path:'add',component:AddblogComponent,canActivate:[authenticationGuard]},
 
   // { path: 'courses/course/:id', component: CourseComponent },
   { path: 'courses', canActivateChild : [courseGuard],  children : [
